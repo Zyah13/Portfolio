@@ -657,12 +657,9 @@ section {
 
 /* Footer */
 .footer {
-    background: linear-gradient(90deg, #0a0e27 60%, #181c3a 100%);
     color: #fff;
     text-align: center;
     padding: 3rem 0 2rem 0;
-    border-top: 1px solid rgba(167, 139, 250, 0.3);
-    box-shadow: 0 -2px 40px 0 rgba(167, 139, 250, 0.10);
     position: relative;
 }
 
