@@ -561,7 +561,6 @@ section {
 .project-card:hover {
     transform: translateY(-10px);
     border-color: #c4b5fd;
-    box-shadow: 0 0 50px rgba(167, 139, 250, 0.8), 0 0 100px rgba(167, 139, 250, 0.6), 0 0 150px rgba(196, 181, 253, 0.4), 0 10px 30px rgba(167, 139, 250, 0.4);
 }
 
 .project-image-wrapper {
@@ -626,7 +625,7 @@ section {
 }
 
 .contact-form:hover {
-    box-shadow: 0 0 50px rgba(167, 139, 250, 0.7), 0 0 80px rgba(167, 139, 250, 0.5), 0 0 120px rgba(196, 181, 253, 0.3), 0 5px 15px rgba(167, 139, 250, 0.3);
+    box-shadow: 0 0 50px rgba(167, 139, 250, 0.224), 0 0 80px rgba(167, 139, 250, 0.256), 0 0 120px rgba(195, 181, 253, 0.145), 0 5px 15px rgba(167, 139, 250, 0.3);
     border-color: #c4b5fd;
 }
 
