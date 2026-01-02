@@ -6,9 +6,54 @@
     <title>Jieya Lingaolingao</title>
     <link rel="icon" type="image/png" href="Images/pic.jpg">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-</head>
+    <style>
+        .skills-section .swiper {
+            width: 100%;
+            height: 80px;
+            overflow: hidden;
+        }
+        .skills-section .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: transparent;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .skills-section .swiper-slide img {
+            display: block;
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+        }
+        .skills-section .swiper-slide span {
+            margin-top: 8px;
+            font-size: 12px;
+            color: white;
+        }
+        .swiper-container-free-mode > .swiper-wrapper {
+            -webkit-transition-timing-function: linear;
+            -o-transition-timing-function: linear;
+            transition-timing-function: linear;
+        }
+        .swiper-row-2 {
+            margin-top: -15px; /* Creates the overlap */
+        }
+    </style>
+    <link </head>
 <body>
     <!-- Header Navigation -->
     <header class="header">
@@ -127,72 +172,49 @@
     <section id="skills" class="skills-section">
         <div class="container">
             <h2 class="section-title"><i class="fas fa-laptop-code"> </i> <span>Tech Stack</span></h2>
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <h3>Languages</h3>
-                    <p>
-                        <i class="fab fa-js-square" title="JavaScript"></i> JavaScript,
-                        <i class="devicon-typescript-plain colored" title="TypeScript"></i> TypeScript,
-                        <i class="fab fa-html5" title="HTML"></i> HTML,
-                        <i class="fab fa-css3-alt" title="CSS"></i> CSS,
-                        <i class="devicon-c-plain colored" title="C"></i> C,
-                        <i class="devicon-csharp-plain colored" title="C#"></i> C#,
-                        <i class="fab fa-php" title="PHP"></i> PHP,
-                        <i class="fab fa-python" title="Python"></i> Python
-                    </p>
+            <!-- Swiper -->
+            <div class="swiper mySwiper1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" title="JavaScript" ><span>JavaScript</span></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" title="TypeScript" ><span>TypeScript</span></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" title="HTML" ><span>HTML</span></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" title="CSS" ><span>CSS</span></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-plain.svg" title="C" ><span>C</span></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-plain.svg" title="C#" ><span>C#</span></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" title="PHP" ><span>PHP</span></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" title="Python" ><span>Python</span></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" title="ASP.NET" ><span>ASP.NET</span></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" title="Django" ><span>Django</span></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg" title="Laravel" ><span>Laravel</span></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" title="Node.js" ><span>Node.js</span></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" title="React" ><span>React</span></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" title="React Native" ><span>React Native</span></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" title="Next.js" ><span>Next.js</span></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg" title="Vite" ><span>Vite</span></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" title="Vue.js" ><span>Vue.js</span></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" title="jQuery" ><span>jQuery</span></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" title="MySQL" ><span>MySQL</span></div>
                 </div>
-                <div class="skill-item">
-                    <h3>Frameworks</h3>
-                     <p>
-                        <i class="devicon-dotnetcore-plain colored" title="ASP.NET"></i> ASP.NET,
-                        <i class="devicon-django-plain colored" title="Django"></i> Django,
-                        <i class="devicon-laravel-plain colored" title="Laravel"></i> Laravel,
-                        <i class="devicon-nodejs-plain colored" title="Node.js"></i> Node,
-                        <i class="devicon-react-original colored" title="React"></i> React,
-                        <i class="devicon-react-original colored" title="React Native"></i> React Native,
-                        <i class="devicon-nextjs-original colored" title="Next.js"></i> Next,
-                        <i class="devicon-vitejs-plain colored" title="Vite"></i> Vite,
-                        <i class="devicon-vuejs-plain colored" title="Vue.js"></i> Vue,
-                        <i class="devicon-jquery-plain colored" title="jQuery"></i> jQuery
-                    </p>
-                </div>
-                <div class="skill-item">
-                    <h3>Database</h3>
-                    <p>
-                        <i class="devicon-mysql-plain colored" title="MySQL"></i> MySQL,
-                        <i class="devicon-postgresql-plain colored" title="PostgreSQL"></i> PostgreSQL,
-                        <img src="https://seeklogo.com/images/S/supabase-logo-DCC676FFE2-seeklogo.com.png" alt="Supabase" title="Supabase" width="20" style="vertical-align:middle; margin-right:4px;"> Supabase
-                    </p>
-                </div>
-                <div class="skill-item">
-                    <h3>UI/UX Design</h3>
-                    <p>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="Canva" title="Canva" width="20" style="vertical-align:middle; margin-right:4px;">
-                        Canva,
-                        <i class="devicon-bootstrap-plain colored" title="Bootstrap"></i> Bootstrap,
-                        <i class="devicon-tailwindcss-plain colored" title="Tailwind"></i> Tailwind,
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" title="Figma" width="20" style="vertical-align:middle; margin-right:4px;">
-                        Figma
-                    </p>
-                </div>
-                <div class="skill-item">
-                    <h3>APIs & Other Tools</h3>
-                   <p>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_Gemini_logo.svg" alt="Gemini" title="Gemini" width="20" style="vertical-align:middle; margin-right:4px;">
-                        Gemini,
-                        <i class="fab fa-github" title="GitHub"></i> GitHub,
-                        <i class="devicon-git-plain colored" title="Git"></i> Git,
-                        <i class="devicon-vscode-plain colored" title="VS Code"></i> VS Code,
-                        <i class="fab fa-microsoft" title="Teams"></i> Teams,
-                        <img src="https://seeklogo.com/images/E/expo-logo-01BB2BCFC3-seeklogo.com.png" alt="Expo" title="Expo" width="20" style="vertical-align:middle; margin-right:4px;">
-                        Expo,
-                        <i class="devicon-visualstudio-plain colored" title="Visual Studio 2019"></i> Visual Studio 2019,
-                        <i class="devicon-arduino-plain colored" title="Arduino"></i> Arduino,
-                        <img src="https://cdn.worldvectorlogo.com/logos/cisco-2.svg" alt="Cisco" title="Cisco" width="20" style="vertical-align:middle; margin-right:4px;">
-                        Cisco,
-                        <i class="devicon-unity-original colored" title="Unity"></i> Unity,
-                        <i class="devicon-oracle-original colored" title="Oracle"></i> Oracle
-                    </p>
+            </div>
+            <div class="swiper mySwiper2 swiper-row-2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" title="PostgreSQL" ><span>PostgreSQL</span></div>
+                    <div class="swiper-slide"><img src="https://seeklogo.com/images/S/supabase-logo-DCC676FFE2-seeklogo.com.png" alt="Supabase" title="Supabase" ><span>Supabase</span></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="Canva" title="Canva" ><span>Canva</span></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" title="Bootstrap" ><span>Bootstrap</span></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" title="Tailwind" ><span>Tailwind</span></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" title="Figma" ><span>Figma</span></div>
+                    <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_Gemini_logo.svg" alt="Gemini" title="Gemini" ><span>Gemini</span></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" title="GitHub" ><span>GitHub</span></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" title="Git" ><span>Git</span></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" title="VS Code" ><span>VS Code</span></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" title="Teams" ><span>Teams</span></div>
+                    <div class="swiper-slide"><img src="https://seeklogo.com/images/E/expo-logo-01BB2BCFC3-seeklogo.com.png" alt="Expo" title="Expo" ><span>Expo</span></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" title="Visual Studio 2019" ><span>VS 2019</span></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" title="Arduino" ><span>Arduino</span></div>
+                    <div class="swiper-slide"><img src="https://cdn.worldvectorlogo.com/logos/cisco-2.svg" alt="Cisco" title="Cisco" ><span>Cisco</span></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" title="Unity" ><span>Unity</span></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" title="Oracle" ><span>Oracle</span></div>
                 </div>
             </div>
         </div>
@@ -323,7 +345,32 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        var swiper1 = new Swiper(".mySwiper1", {
+            slidesPerView: 'auto',
+            spaceBetween: 30,
+            loop: true,
+            freeMode: true,
+            speed: 5000,
+            autoplay: {
+                delay: 1,
+                disableOnInteraction: false,
+            },
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+            slidesPerView: 'auto',
+            spaceBetween: 30,
+            loop: true,
+            freeMode: true,
+            speed: 5000,
+            autoplay: {
+                delay: 1,
+                disableOnInteraction: false,
+                reverseDirection: true,
+            },
+        });
+    </script>
 </body>
 </html>
-
