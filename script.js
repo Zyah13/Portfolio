@@ -8,8 +8,18 @@ hamburger.addEventListener('click', () => {
 
 // Close mobile menu when clicking on a link
 document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', () => {
+    link.addEventListener('click', function() {
         navMenu.classList.remove('active');
+        // Remove 'active' from all links and add to clicked
+        navLinks.forEach(l => l.classList.remove('active'));
+        this.classList.add('active');
+    });
+    link.addEventListener('mouseenter', function() {
+        navLinks.forEach(l => l.classList.remove('hovered'));
+        this.classList.add('hovered');
+    });
+    link.addEventListener('mouseleave', function() {
+        this.classList.remove('hovered');
     });
 });
 
@@ -20,18 +30,29 @@ const navLinks = document.querySelectorAll('.nav-link');
 function highlightActiveSection() {
     const scrollY = window.pageYOffset;
 
+    let found = false;
     sections.forEach(section => {
         const sectionHeight = section.offsetHeight;
         const sectionTop = section.offsetTop - 100;
         const sectionId = section.getAttribute('id');
-
-        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+        if (!found && scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             navLinks.forEach(link => {
                 link.classList.remove('active');
                 if (link.getAttribute('href') === `#${sectionId}`) {
                     link.classList.add('active');
                 }
             });
+            found = true;
+        }
+    });
+    // If no section is found, remove all active states
+    if (!found) {
+        navLinks.forEach(link => link.classList.remove('active'));
+    }
+    // Remove hovered state if not hovering
+    navLinks.forEach(link => {
+        if (!link.matches(':hover')) {
+            link.classList.remove('hovered');
         }
     });
 }

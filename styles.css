@@ -1,3 +1,28 @@
+/* Tech Badge Styles */
+
+/* Add this for the parent container of tech badges */
+.tech-badge-container {
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 12px; /* vertical and horizontal spacing */
+    margin-top: 25px;
+}
+
+.tech-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    margin: 2px 0 2px 0;
+    border: 1.5px solid #a78bfa;
+    border-radius: 18px;
+    background: rgba(55, 48, 163, 0.12);
+    color: #a78bfa;
+    font-size: 9px;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+    letter-spacing: 0.01em;
+}
+
 /* Reset and Base Styles */
 * {
     margin: 0;
@@ -759,40 +784,187 @@ section {
     }
 }
 
-@media (max-width: 600px) {
-    .footer .footer-title {
-        font-size: 1.5rem;
+/* Responsive Design - Small Mobile (up to 375px) */
+@media (max-width: 375px) {
+    .container {
+        padding: 0 8px;
     }
-    .footer .footer-contact-card {
-        padding: 1.2rem 1rem 1rem 1rem;
+    .nav-container {
+        padding: 0.7rem 8px;
+    }
+    .home-section {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    .home-name {
+        font-size: 1.1rem;
+    }
+    .role-text {
+        font-size: 0.9rem;
+    }
+    .home-description {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    .home-image-wrapper {
+        width: 180px;
+        height: 180px;
+    }
+    .home-profile-image {
+        width: 120px;
+        height: 120px;
+    }
+    .glow-ring-1 {
+        width: 140px;
+        height: 140px;
+    }
+    .glow-ring-2 {
+        width: 160px;
+        height: 160px;
+    }
+    .glow-ring-3 {
+        width: 180px;
+        height: 180px;
+    }
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .stat-number {
+        font-size: 1.2rem;
+    }
+    .section-title {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+    .about-section {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .about-content {
+        padding-left: 0;
+        padding-right: 0;
+        gap: 20px;
+    }
+    .about-profile-image {
+        width: 80px;
+        height: 70px;
+    }
+    .about-image {
+        width: 120px;
+        height: 120px;
+    }
+    .about-experience {
+        padding: 12px;
+        padding-left: 16px;
+        max-width: 100%;
+        font-size: 0.95rem;
+    }
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .project-card {
+        padding: 1rem;
+    }
+    .project-image-wrapper {
+        height: 80px;
+    }
+    .contact-content {
+        padding: 0 4px;
+    }
+    .contact-text {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    .form-group input,
+    .form-group textarea {
+        padding: 0.7rem;
+        font-size: 0.95rem;
+    }
+    .submit-button {
+        padding: 0.7rem;
+        font-size: 0.95rem;
+    }
+    .footer {
+        padding: 2rem 0 1rem 0;
+    }
+    .footer .footer-title {
+        font-size: 1.1rem;
+        margin-bottom: 0.7rem;
     }
     .footer .footer-desc {
+        font-size: 0.95rem;
+        margin-bottom: 1.2rem;
+    }
+    .footer .footer-contact-card {
+        padding: 0.7rem 0.5rem 0.5rem 0.5rem;
+        min-width: unset;
+        max-width: 98vw;
+    }
+    .footer .footer-bottom {
+        font-size: 0.8rem;
+    }
+}
+
+/* Responsive Design - Mobile (up to 480px) */
+@media (max-width: 480px) {
+    .nav-container {
+        padding: 1rem 15px;
+    }
+
+    .home-name {
+        font-size: 1.5rem;
+    }
+
+    .role-text {
         font-size: 1rem;
     }
+
+    .home-image-wrapper {
+        width: 280px;
+        height: 280px;
+    }
+
+    .home-profile-image {
+        width: 220px;
+        height: 220px;
+    }
+
+    .glow-ring-1 {
+        width: 250px;
+        height: 250px;
+    }
+
+    .glow-ring-2 {
+        width: 280px;
+        height: 280px;
+    }
+
+    .glow-ring-3 {
+        width: 310px;
+        height: 310px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .about-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .project-image-wrapper {
+        height: 150px;
+    }
 }
 
-/* Animations */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes glow {
-    0%, 100% {
-        text-shadow: 0 0 15px rgba(99, 102, 241, 0.4), 0 0 30px rgba(99, 102, 241, 0.2);
-    }
-    50% {
-        text-shadow: 0 0 20px rgba(99, 102, 241, 0.6), 0 0 40px rgba(99, 102, 241, 0.4);
-    }
-}
-
-/* Responsive Design */
+/* Responsive Design - Tablet (up to 768px) */
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
@@ -894,59 +1066,52 @@ section {
     }
 }
 
-@media (max-width: 480px) {
-    .nav-container {
-        padding: 1rem 15px;
+/* Responsive Design - Large Tablet/Small Desktop (up to 900px) */
+@media (max-width: 900px) {
+    .footer .footer-contact-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
     }
+    .footer .footer-contact-card {
+        width: 90%;
+        min-width: unset;
+        max-width: 400px;
+        align-items: flex-start;
+    }
+}
 
-    .home-name {
+/* Responsive Design - Medium Mobile (up to 600px) */
+@media (max-width: 600px) {
+    .footer .footer-title {
         font-size: 1.5rem;
     }
-
-    .role-text {
+    .footer .footer-contact-card {
+        padding: 1.2rem 1rem 1rem 1rem;
+    }
+    .footer .footer-desc {
         font-size: 1rem;
     }
+}
 
-    .home-image-wrapper {
-        width: 280px;
-        height: 280px;
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
     }
-
-    .home-profile-image {
-        width: 220px;
-        height: 220px;
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
+}
 
-    .glow-ring-1 {
-        width: 250px;
-        height: 250px;
+@keyframes glow {
+    0%, 100% {
+        text-shadow: 0 0 15px rgba(99, 102, 241, 0.4), 0 0 30px rgba(99, 102, 241, 0.2);
     }
-
-    .glow-ring-2 {
-        width: 280px;
-        height: 280px;
-    }
-
-    .glow-ring-3 {
-        width: 310px;
-        height: 310px;
-    }
-
-    .stats-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .stat-number {
-        font-size: 2rem;
-    }
-
-    .about-image {
-        width: 200px;
-        height: 200px;
-    }
-
-    .project-image-wrapper {
-        height: 150px;
+    50% {
+        text-shadow: 0 0 20px rgba(99, 102, 241, 0.6), 0 0 40px rgba(99, 102, 241, 0.4);
     }
 }
 
