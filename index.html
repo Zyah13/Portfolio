@@ -33,11 +33,19 @@
             align-items: center;
             flex-direction: column;
         }
-        .skills-section .swiper-slide img {
+        .skills-section .swiper-slide img,
+        .skills-section .swiper-slide i {
             display: block;
             width: 40px;
             height: 40px;
             object-fit: contain;
+        }
+        .skills-section .swiper-slide i {
+            font-size: 40px;
+            color: white;
+        }
+        .skills-section .swiper-slide i.colored {
+            color: initial; /* Allow devicon colors to apply */
         }
         .skills-section .swiper-slide span {
             margin-top: 8px;
@@ -179,13 +187,13 @@
                     <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" title="TypeScript" ><span>TypeScript</span></div>
                     <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" title="HTML" ><span>HTML</span></div>
                     <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" title="CSS" ><span>CSS</span></div>
-                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-plain.svg" title="C" ><span>C</span></div>
+                    <div class="swiper-slide"><i class="devicon-c-plain colored" title="C"></i><span>C</span></div>
                     <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-plain.svg" title="C#" ><span>C#</span></div>
                     <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" title="PHP" ><span>PHP</span></div>
                     <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" title="Python" ><span>Python</span></div>
                     <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" title="ASP.NET" ><span>ASP.NET</span></div>
                     <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" title="Django" ><span>Django</span></div>
-                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg" title="Laravel" ><span>Laravel</span></div>
+                    <div class="swiper-slide"><i class="devicon-laravel-plain colored" title="Laravel"></i><span>Laravel</span></div>
                     <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" title="Node.js" ><span>Node.js</span></div>
                     <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" title="React" ><span>React</span></div>
                     <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" title="React Native" ><span>React Native</span></div>
@@ -202,13 +210,13 @@
                     <div class="swiper-slide"><img src="https://seeklogo.com/images/S/supabase-logo-DCC676FFE2-seeklogo.com.png" alt="Supabase" title="Supabase" ><span>Supabase</span></div>
                     <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="Canva" title="Canva" ><span>Canva</span></div>
                     <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" title="Bootstrap" ><span>Bootstrap</span></div>
-                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" title="Tailwind" ><span>Tailwind</span></div>
+                    <div class="swiper-slide"><i class="devicon-tailwindcss-plain colored" title="Tailwind"></i><span>Tailwind</span></div>
                     <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" title="Figma" ><span>Figma</span></div>
-                    <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_Gemini_logo.svg" alt="Gemini" title="Gemini" ><span>Gemini</span></div>
-                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" title="GitHub" ><span>GitHub</span></div>
+                    <div class="swiper-slide"><i class="fas fa-brain" title="Gemini"></i><span>Gemini</span></div>
+                    <div class="swiper-slide"><i class="fab fa-github" title="GitHub"></i><span>GitHub</span></div>
                     <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" title="Git" ><span>Git</span></div>
                     <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" title="VS Code" ><span>VS Code</span></div>
-                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" title="Teams" ><span>Teams</span></div>
+                    <div class="swiper-slide"><i class="fab fa-microsoft" title="Teams"></i><span>Teams</span></div>
                     <div class="swiper-slide"><img src="https://seeklogo.com/images/E/expo-logo-01BB2BCFC3-seeklogo.com.png" alt="Expo" title="Expo" ><span>Expo</span></div>
                     <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" title="Visual Studio 2019" ><span>VS 2019</span></div>
                     <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" title="Arduino" ><span>Arduino</span></div>
@@ -349,7 +357,7 @@
     <script src="script.js"></script>
     <script>
         var swiper1 = new Swiper(".mySwiper1", {
-            slidesPerView: 'auto',
+            slidesPerView: 5,
             spaceBetween: 30,
             loop: true,
             freeMode: true,
@@ -360,7 +368,7 @@
             },
         });
         var swiper2 = new Swiper(".mySwiper2", {
-            slidesPerView: 'auto',
+            slidesPerView: 5,
             spaceBetween: 30,
             loop: true,
             freeMode: true,
