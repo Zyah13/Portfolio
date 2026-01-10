@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,68 +9,15 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <style>
-        .skills-section .swiper {
-            width: 100%;
-            height: 80px;
-            overflow: hidden;
-        }
-        .skills-section .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: transparent;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            -webkit-justify-content: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            -webkit-align-items: center;
-            align-items: center;
-            flex-direction: column;
-        }
-        .skills-section .swiper-slide img,
-        .skills-section .swiper-slide i {
-            display: block;
-            width: 40px;
-            height: 40px;
-            object-fit: contain;
-        }
-        .skills-section .swiper-slide i {
-            font-size: 40px;
-            color: white;
-        }
-        .skills-section .swiper-slide i.colored {
-            color: initial; /* Allow devicon colors to apply */
-        }
-        .skills-section .swiper-slide span {
-            margin-top: 8px;
-            font-size: 12px;
-            color: white;
-        }
-        .swiper-container-free-mode > .swiper-wrapper {
-            -webkit-transition-timing-function: linear;
-            -o-transition-timing-function: linear;
-            transition-timing-function: linear;
-        }
-        .swiper-row-2 {
-            margin-top: -15px; /* Creates the overlap */
-        }
-    </style>
-    <link </head>
+    </head>
 <body>
     <!-- Header Navigation -->
     <header class="header">
         <nav class="nav-container">
             <div class="logo">
-                <a href="https://github.com/Zyah13" target="_blank" aria-label="GitHub" style="margin-left:8px;">
-                    <i class="fab fa-github"></i>
+                <a href="https://github.com/Zyah13" target="_blank" aria-label="GitHub">
+                    <img src="Images/whitelogo.png" alt="Logo" id="logo-image">
                 </a>
-                <a href="https://github.com/Zyah13" target="_blank" aria-label="GitHub">Eyah13</a>
             </div>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
@@ -78,17 +25,23 @@
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#contact" class="nav-link">Contacts</a></li>
             </ul>
-           
+            <div class="theme-switch-wrapper">
+                <i class="fas fa-moon"></i>
+                <label class="theme-switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-sun"></i>
+            </div>
+        </nav>
     </header>
 
     <!-- Home Section -->
-    <section id="home" class="home-section">
-        <div class="container">
+    <section id="home" class="home-section" style="display: flex; align-items: center;">
+        <div class="container" style="display: flex; align-items: center; justify-content: space-around; width: 100%;">
             <div class="home-content">
                 <div class="home-left">
-                    <div class="home-image-wrapper">
-                        <img src="Images/pic.jpg" alt="Profile" class="home-profile-image">
-                    </div>
+                    <img src="Images/me.png" alt="Profile Picture" class="home-profile-image">
                 </div>
                 <div class="home-right">
                     <p class="hello-text">Hello, I'm</p>
@@ -146,29 +99,39 @@
             <h3 style="text-align: center; margin-bottom: 12px;">Experience</h3>
             <ul class="experience-timeline">
                 <li style="margin-bottom: 10px;">
-                    <span class="exp-title">BS Information Technology</span>
-                    <span class="exp-date">Present</span>
+                    <div class="experience-header">
+                        <span class="exp-title">BS Information Technology</span>
+                        <span class="exp-date">Present</span>
+                    </div>
                     <div class="exp-desc">Cebu Technological University - Main Campus</div>
                     <div class="exp-desc">4th year undergrad student</div>
                 </li>
                 <li style="margin-bottom: 10px;">
-                    <span class="exp-title">Capstone Project</span>
-                    <span class="exp-date">2025</span>
+                    <div class="experience-header">
+                        <span class="exp-title">Capstone Project</span>
+                        <span class="exp-date">2025</span>
+                    </div>
                     <div class="exp-desc">e-KaBIT – Streamlining Community Operations Through Digital Connectivity</div>
                 </li>
                 <li style="margin-bottom: 10px;">
-                    <span class="exp-title">UI/UX Design & Learning</span>
-                    <span class="exp-date">2025</span>
+                    <div class="experience-header">
+                        <span class="exp-title">UI/UX Design & Learning</span>
+                        <span class="exp-date">2025</span>
+                    </div>
                     <div class="exp-desc">Practiced UI/UX design principles through guided online practice, developing wireframes, prototypes, and user-centered app concepts.</div>
                 </li>
                 <li style="margin-bottom: 10px;">
-                    <span class="exp-title">Student Projects</span>
-                    <span class="exp-date">2023-2024</span>
+                    <div class="experience-header">
+                        <span class="exp-title">Student Projects</span>
+                        <span class="exp-date">2023-2024</span>
+                    </div>
                     <div class="exp-desc">Built web and mobile apps including a including Ecopower Web Platform, MeetUpPlanner, Ecommerce platform, and a Flowershop website.</div>
                 </li>
                 <li style="margin-bottom: 10px;">
-                    <span class="exp-title">Hello World!</span>
-                    <span class="exp-date">2022</span>
+                    <div class="experience-header">
+                        <span class="exp-title">Hello World!</span>
+                        <span class="exp-date">2022</span>
+                    </div>
                     <div class="exp-desc">Wrote my first line of code.</div>
                 </li>
             </ul>
@@ -204,7 +167,7 @@
                     <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" title="MySQL" ><span>MySQL</span></div>
                 </div>
             </div>
-            <div class="swiper mySwiper2 swiper-row-2">
+            <div class="swiper mySwiper2 swiper-row-2" style="margin-top: 20px;">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" title="PostgreSQL" ><span>PostgreSQL</span></div>
                     <div class="swiper-slide"><img src="https://seeklogo.com/images/S/supabase-logo-DCC676FFE2-seeklogo.com.png" alt="Supabase" title="Supabase" ><span>Supabase</span></div>
@@ -239,6 +202,9 @@
                 <div class="project-card" style="text-align: center;">
                     <div class="project-image-wrapper">
                         <img src="Images/ekabit.png" alt="Web Application" class="project-image">
+                        <div class="project-link-container">
+                            <a href="https://ekbt.org/" target="_blank" class="project-link">Visit Project</a>
+                        </div>
                     </div>
                     <h3 class="project-title">e-KaBIT</h3>
                     <p class="project-description">
@@ -261,6 +227,7 @@
                             
 
                     </div>
+
                 </div>
                 <div class="project-card">
                     <div class="project-image-wrapper">
@@ -268,7 +235,8 @@
                     </div>
                     <h3 class="project-title">Alcover Flower Shop</h3>
                     <p class="project-description">
-                        A web application for a flower shop designed to manage products, customer orders, and deliveries efficiently.
+                       A web application for a flower shop designed to manage products, customer orders, and deliveries efficiently, improving workflow, reducing manual tasks, 
+                       and enhancing the overall shopping experience for customers.
                     </p>
                      <div class="tech-badge-container">
                             <span class="tech-badge">PHP</span>
@@ -287,7 +255,8 @@
                     </div>
                     <h3 class="project-title">Tara</h3>
                     <p class="project-description">
-                       A mobile application for a meetup planner designed to help users organize events, manage schedules, and coordinate with participants easily.
+                        A mobile application for a meetup planner designed to help users organize events, manage schedules, and coordinate with participants easily,
+                        improving communication, collaboration, and overall event planning efficiency.
                     </p>
                     <div class="tech-badge-container">
                             <span class="tech-badge">React Native</span>
@@ -318,7 +287,7 @@
    
 
     <!-- Footer -->
-    <footer class="footer" id="contact">
+    <section id="contact"class="contact-section">
          <h2 class="section-title"><i class="fas fa-address-book"></i> <span>Contact</span></h2>
         <div class="footer-title">Let's build something together.</div>
         <div class="footer-desc">
@@ -351,7 +320,7 @@
                 <a class="footer-contact-link" href="https://www.instagram.com/eyah_l13/" target="_blank">@eyah_l13</a>
             </div>
         </div>
-    </footer>
+    </section>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
